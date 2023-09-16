@@ -31,7 +31,7 @@ class UserController extends Controller
             return redirect('/')
                 ->withErrors($validator)
                 ->withInput();
-        }
+        } 
         $user = new User();
         $user->name = $request->input('name');
         $user->email = $request->input('email');
